@@ -1,0 +1,333 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Open+Sans:wght@300;600;800&display=swap');
+
+
+/*   ----- Variables  -----  */
+:root {
+    /* --custom-embellishment-name:; */
+    --darkBlue: #325B79;
+    --babyBlue: #EAFFFF;
+    --slate: #C2C8D6;
+    --lightBlue: #99D0F2;
+    --beige: rgba(209, 201, 180, .5);
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-color:;
+    background-image: url('images/san-francisco-beach.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 0 5%;
+    max-width: 75%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    color: var(--slate);
+    background-color: var(--darkBlue);
+    margin: 0 auto;
+    padding: 0 30%;
+    border: 1px solid var(--slate);
+  }
+  /* make header img smaller */
+  header img {
+    width: 15%;
+  }
+  main {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+  }
+  section {}
+  article {}
+  #topic1 {}
+  #topic2 {}
+  div {}
+  aside {}
+  footer {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--darkBlue);
+    color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+    flex-flow: row wrap;
+  }
+  nav a {
+    color: var(--babyBlue);
+    text-decoration: none;
+    font-size: .8rem;
+    padding: 1rem;
+    border: 1px solid var(--babyBlue);
+    border-radius: 5px;
+    margin: 10px;
+  }
+  nav a:hover {
+    background-color: var(--babyBlue);
+    color: var(--darkBlue);
+  }
+  .local {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--slate);
+    color: var(--beige);
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--slate);
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  } 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+    width: 100%;
+  }
+  caption {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    padding: 0 5%;
+  }
+
+  tr th {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    padding: 1% 0;    
+  }
+
+  tr td {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    border: 1px solid var(--beige);
+    text-align: center;
+  }
+  thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {}
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    margin: 50px;
+    padding: 1%;
+    border: 1px solid var(--darkBlue);
+  }
+    legend {
+      color: var(--darkBlue);
+      background-color: var(--babyBlue);
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+  label {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    display: block;
+    margin-top: 10px;
+  }
+  button {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    padding: 10px;
+    border: 1px solid var(--darkBlue);
+    border-radius: 5px;
+    margin: 15px;
+  }
+  button:hover {
+    background-color: var(--darkBlue);
+    color: var(--babyBlue);
+  }
+  input {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    padding: 5px;
+    border: 1px solid var(--darkBlue);
+  }
+  select {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+  }
+    optgroup {}
+    option {}
+  
+    optgroup {}
+    option {}
+  textarea {
+    color: var(--darkBlue);
+    background-color: var(--babyBlue);
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid var(--darkBlue);
+    height: 200px;
+    width: 50%;
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  .gallery figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5%;
+    border: 1px solid var(--darkBlue);
+    width: 75%;
+  }
+.gallery figcaption {
+    color: var(--slate);
+    background-color: var(--darkBlue);
+    margin: .25% auto;
+    padding: .25%;
+    border: 1px solid var(--darkBlue);
+}
+figure img {
+    width: 50%;
+    height: auto;
+}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+
+@media all and (max-width: 425px) {
+    table thead {
+      display: none;
+    }
+
+    table td {
+      display: flex;
+    }
+
+}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
